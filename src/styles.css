@@ -1,0 +1,82 @@
+:root {
+  --text-center: center;
+}
+body {
+  text-align: var(--text-center) !important;
+  margin: 0;
+  padding: 0;
+  background-color: #e7e5e5 !important;
+}
+h1 {
+  padding: 22px;
+  text-align: center;
+}
+
+#map {
+  margin-top: 70px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.home {
+  background-image: url("../img/map-pin-light.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.marker {
+  background-image: url("../img/map-pin-light.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.main-nav {
+  margin: 50px;
+  padding: 6px;
+  flex: 1;
+}
+.map-icon {
+  max-width: 100px;
+}
+.icon {
+  font-size: 85px;
+}
+
+.flag {
+  max-width: 100px !important;
+}
+.year {
+  margin-bottom: 6px;
+  margin-top: 6px;
+  background-color: rgb(219, 221, 234);
+  display: block !important;
+  text-align: center !important;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 6px;
+}
+.country {
+  margin-top: 12px;
+  padding: 6px;
+  font-weight: bold;
+  text-decoration: underline;
+  border: 1px solid black !important;
+}
+.photo {
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 15px;
+}

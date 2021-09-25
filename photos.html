@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Add custom markers in Mapbox GL JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html">⬅ Homepage</a>
+      <h1>Photos</h1>
+      <div class="container">
+        <div class="year row">2016</div>
+        <div class="row border">
+          <div class="col-3 col-sm-6 border country">
+            Japan<br />
+            <img class="flag" src="img/japan-flag.svg" />
+          </div>
+          <div class="col-3 col-sm-6 border">
+            <div class="row">
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="w-100"></div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+            </div>
+          </div>
+
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+        </div>
+        <div class="year row">2017</div>
+        <div class="row border">
+          <div class="col-3 col-sm-6 border country">
+            China<br /><img class="flag" src="img/china-flag.svg" />
+          </div>
+          <div class="col-3 col-sm-6 border">
+            <div class="row">
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="w-100"></div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+              <div class="col photo">photo</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+      </div>
+      <div class="year row">2018</div>
+      <div class="row border">
+        <div class="col-3 col-sm-6 border country">
+          South Korea<br /><img class="flag" src="img/skorea-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-6 border country">
+          Japan<br /><img class="flag" src="img/japan-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+      </div>
+      <div class="year row">2019</div>
+      <div class="row border">
+        <div class="col-3 col-sm-6 border country">
+          Russia<br /><img class="flag" src="img/russia-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-6 border country">
+          Ukraine<br /><img class="flag" src="img/ukraine-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-6 border country">
+          Hong Kong<br /><img class="flag" src="img/hongkong-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-6 border country">
+          Macao<br /><img class="flag" src="img/macao-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-6 border country">
+          North Korea<br /><img class="flag" src="img/nkorea-flag.svg" />
+        </div>
+        <div class="col-3 col-sm-6 border">
+          <div class="row">
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="w-100"></div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+            <div class="col photo">photo</div>
+          </div>
+        </div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+      </div>
+    </div>
+  </body>
+</html>
